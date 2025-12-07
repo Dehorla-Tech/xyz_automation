@@ -4,7 +4,7 @@ module "eks" {
   source          = "terraform-aws-modules/eks/aws"
   cluster_name    = "xyz-eks"
   cluster_version = "1.29"
-  subnets         = ["subnet-123", "subnet-456"]--------------
+  subnets         = ["subnet-02055b80ea5b22535"]
   vpc_id          = "vpc-0b6f3e9b5b3dd0e7e"
 }
 
