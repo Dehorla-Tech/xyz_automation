@@ -5,7 +5,7 @@ module "eks" {
   cluster_name    = "xyz-eks"
   cluster_version = "1.29"
   subnets         = ["subnet-123", "subnet-456"]--------------
-  vpc_id          = vpc-0b6f3e9b5b3dd0e7e
+  vpc_id          = "vpc-0b6f3e9b5b3dd0e7e"
 }
 
 provider "kubernetes" {
