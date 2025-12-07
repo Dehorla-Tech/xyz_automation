@@ -10,7 +10,7 @@ jobs:
         with: { node-version: 18 }
 
       - run: docker build -t dehorlatech/xyz:latest .
-      - run: echo "${{ secrets.DOCKERHUB_PASS }}" | docker login -u Dehorla-Tech --password-stdin
+      - run: echo "${{ secrets.DOCKERHUB_PASS }}" | docker login -u dehorlatech --password-stdin
       - run: docker push dehorlatech/xyz:latest
 
       - uses: hashicorp/setup-terraform@v2
