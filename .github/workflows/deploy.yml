@@ -9,9 +9,9 @@ jobs:
       - uses: actions/setup-node@v3
         with: { node-version: 18 }
 
-      - run: docker build -t Dehorla-Tech/xyz:latest .
+      - run: docker build -t dehorlatech/xyz:latest .
       - run: echo "${{ secrets.DOCKERHUB_PASS }}" | docker login -u Dehorla-Tech --password-stdin
-      - run: docker push Dehorla-Tech/xyz:latest
+      - run: docker push dehorlatech/xyz:latest
 
       - uses: hashicorp/setup-terraform@v2
       - run: terraform init && terraform apply -auto-approve
